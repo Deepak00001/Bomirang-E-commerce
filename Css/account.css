@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F9F9;
+}
+
+main {
+    width:100%;
+    height: 88vh;
+    background-color: white;
+
+}
+/*****************************************************************************  for div 1 **************************************************************/
+main .div1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    top: 2px;}
+/***************************************************************************** for div 2 ****************************************************************/
+    main .div2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+    top: 2px;
+    border:2px solid #F0F3F4;
+    border-radius: 6px;
+}
+/*********************************************************** dimensions of div 1 ***********************************************************************/
+main .div1{
+    height:100px;
+    width:25%;
+    background-color:white;
+    margin-left: 580px;
+    margin-right: 70px;
+
+    
+}
+
+/**************************************************** dimensions of div 2 *****************************************************************/
+
+main .div2{
+    height:520px;
+    width:25%;
+    background-color: white;
+    margin-left: 580px;
+    margin-right: 70px;
+    
+}
+
+
+/****************************************************** for input of email id *************************************************************/
+
+input.name[type=text]{width:85%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: center;
+    position: absolute;
+    left:30px;
+    top:72px;
+     
+}
+
+input.name[type=text]:focus{
+    border-color: orange;
+    box-shadow: 0 0 8px 0 orange;
+}
+
+input.mobile[type=text]{width:20%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: center;
+    position: absolute;
+    left:30px;
+    top:142px;
+     
+}
+
+input.mobile[type=text]:focus{
+    border-color: orange;
+    box-shadow: 0 0 8px 0 orange;
+}
+
+input.mobileno[type=text]{width:60%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: center;
+    position: absolute;
+    left:125px;
+    top:142px;
+     
+}
+
+input.mobileno[type=text]:focus{
+    border-color: orange;
+    box-shadow: 0 0 8px 0 orange;
+}
+
+input.email[type=text]{width:85%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: center;
+    position: absolute;
+    left:30px;
+    top:210px;
+     
+}
+
+input.email[type=text]:focus{
+    border-color: orange;
+    box-shadow: 0 0 8px 0 orange;
+}
+
+input.password[type=text]{width:85%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: center;
+    position: absolute;
+    left:30px;
+    top:280px;
+     
+}
+
+input.password[type=text]:focus{
+    border-color: orange;
+    box-shadow: 0 0 8px 0 orange;
+}
+
+/****************************************************** for login heading *******************************************************************/
+
+h3{
+    position: absolute;
+    font-size:30px;
+    top:20px;
+    left: 30px;
+}
+
+/************************************************** text ***********************************************************************/
+
+h5.nametext{
+    position: absolute;
+    font-size:14px;
+    top:60px;
+    left: 30px;
+}
+
+h5.mobtext{
+    position: absolute;
+    font-size:14px;
+    top:130px;
+    left: 30px;
+}
+
+h5.emailtext{
+    position: absolute;
+    font-size:14px;
+    top:200px;
+    left: 30px;
+}
+
+h5.passwordtext{
+    position: absolute;
+    font-size:14px;
+    top:270px;
+    left: 30px;
+}
+
+/************************************************* for continue button *************************************************************/
+
+button.bcontinue{
+    position: absolute;
+    top:415px;
+    left:30px;
+    width: 85%;
+    border: 2px solid orange;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    align-content: center;
+    background-color:#F1C40F;
+    font-size:15px;
+
+}
+button.bcontinue a{
+    text-decoration: none;
+}
+/****************************************** for text *****************************************************************/
+
+
+.itab{
+    position: absolute;
+    top: 333px;
+    left: 30px;
+    font-size:15px;
+    color: black;
+    font-size:14px
+}
+
+.div4{
+    position: absolute;
+    top: 480px;
+    left: 30px;
+    font-size:15px;
+    color: black;
+    font-size:14px
+}
+
+
+/*************************************************************** for di3 ******************************************************/
+
+ main .div3{
+    position: absolute;
+    top: 410px;
+    
+    height:80px;
+    width:25%;
+    background-color: white;
+    margin-left: 580px;
+}
+
+.newbomirang{
+    font-size: 14px;
+    color: #B3B6B7;
+    
+}
+
+.newaccount{
+    position: relative;
+    top: 4px;
+    width: 100%;
+    border: 1px solid #B3B6B7;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    padding: 6px;
+    box-sizing: border-box;
+    align-content: center;
+    background-color: #E5E7E9;
+    font-size:14px;
+    font:bold;
+
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 20px;
+    font-size: 13px;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 30px;
+    font-size: 13px;
+}

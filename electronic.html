@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Electronics section</title>
+    <link rel="stylesheet" href="Css/elec.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="mainheader">
+<header>
+	<nav>
+		<div id="mySidenav" class="sidenav">
+		  <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+		  <pre>
+		  <a href="#">ALL</a>
+		  <a href="electronic.html" target="_blank">ELECTRONICS</a>
+		  <a href="mens.html" target="_blank">MENS</a>
+		  <a href="women.html" target="_blank">WOMEN</a>
+		  <a href="kids.html" target="_blank">KIDS</a>
+		  <a href="furniture.html" target="_blank">FURNITURE</a>
+		  <a href="shoes.html" target="_blank">SHOES</a>
+		  <a href="#aboutus">ABOUT US</a>
+		  <a href="#aboutus">HELP</a>
+		  <a href="login.html" target="_blank">LOGIN</a>
+		  <a href="#contactus">CONTACT US</a>
+		  </pre>
+		</div>
+		<span class="hamburger" onclick="openNav()">&#9776;</span>
+		
+		<div class="logo"><img src="img/logo(3).jpg" alt=""></div>
+		<div><select id="all">
+			<option>ALL</option>
+			<option>Mens</option>
+			<option>Womens</option>
+			<option>Kids</option>
+			<option>Electronics</option>
+			<option>Shoes</option>
+			<option>Essentials</option>
+			<option>Mobiles</option>
+		</select>
+		<input type="text" id="search" placeholder="      Search for Products, Brands and more..">
+		<button id="searchicon" onclick="searchcat()" ><i class="fa fa-search fa-2x"></i></button>
+		</div>
+		<button class="login" ><a href="login.html" target="_blank">Login</a></button>
+		<button class="orders" >Orders</button>
+		<button class="contactus" ><a href="tel:6388392311">Contact Us</a></button>
+		<a href="cart.html" target="_blank" id="shoppingcart"><i class="fa fa-shopping-cart fa-3x"></i></a>
+		
+	</nav>
+	<div class="div1">
+		<section class="div1sec1"><div><img src="img/item1.png"><h5 id="offer">Up To 50% off</h5></div></section>
+		<section class="div1sec2"><div><img src="img/item2.png"><h5 id="offer">Up To 20% off</h5></div></section>
+		<section class="div1sec3"><div><img src="img/item3.png"><h5 id="offer">Price Slashed</h5></div></section>
+		<section class="div1sec4"><div><img src="img/item4.png"><h5 id="offer">From Rs 1444</h5></div></section>
+		
+	</div>
+	<div class="div2">
+		<section class="div2sec1"><div><img src="img/item5.png"><h5 id="offer">Price Slashed!</h5></div></section>
+		<section class="div2sec2"><div><img src="img/item6.png"><h5 id="offer">Shop Now!</h5></div></section>
+		<section class="div2sec3"><div><img src="img/item7.png"><h5 id="offer">Best Deal!</h5></div></section>
+		<section class="div2sec4"><div><img src="img/item8.png"><h5 id="offer">Shop Now!</h5></div></section>
+	</div>
+	<div class="div3">
+		<section class="div3sec1"><div><img src="img/item9.png"><h5 id="offer">Up To 50% off</h5></div></section>
+		<section class="div3sec2"><div><img src="img/item10.png"><h5 id="offer">Up To 40% off</h5></div></section>
+		<section class="div3sec3"><div><img src="img/item11.png"><h5 id="offer">Shop Now!</h5></div></section>
+		<section class="div3sec4"><div><img src="img/item12.png"><h5 id="offer">Price Dropped!</h5></div></section>
+	</div>
+	<div class="div4">
+		<section class="div4sec1"><div><img src="img/item13.png"><h5 id="offer">Best Deal!</h5></div></section>
+		<section class="div4sec2"><div><img src="img/item14.png"><h5 id="offer">Best Deal!</h5></div></section>
+		<section class="div4sec3"><div><img src="img/item15.png"><h5 id="offer">Shop Now!</h5></div></section>
+		<section class="div4sec4"><div><img src="img/item16.png"><h5 id="offer"> Up To 80% off</h5></div></section>
+	</div>
+	<div class="div5">
+		<section class="div5sec1"><div><img src="img/item17.png"><h5 id="offer">Just From Rs 7999</h5></div></section>
+		<section class="div5sec2"><div><img src="img/item18.png"><h5 id="offer">Starting From Rs 999</h5></div></section>
+		<section class="div5sec3"><div><img src="img/item19.png"><h5 id="offer">Shop Now!</h5></div></section>
+		<section class="div5sec4"><div><img src="img/item20.png"><h5 id="offer">Hurry! Only Few Left</h5></div></section>
+	</div>
+	<div class="div6">
+		<section class="div6sec1"><div><img src="img/item21.png"><h5 id="offer">Up To 40% off</h5></div></section>
+		<section class="div6sec2"><div><img src="img/item22.png"><h5 id="offer">Bestselling!</h5></div></section>
+		<section class="div6sec3"><div><img src="img/item23.png"><h5 id="offer">Up To 30% off</h5></div></section>
+		<section class="div6sec4"><div><img src="img/item24.png"><h5 id="offer">Shop Now!</h5></div></section>
+	</div>
+	<div class="div7">
+		<section class="div7sec1"><div><img src="img/item25.png"><h5 id="offer">Under Rs 20000</h5></div></section>
+		<section class="div7sec2"><div><img src="img/item26.png"><h5 id="offer">From Rs 1999</h5></div></section>
+		<section class="div7sec3"><div><img src="img/item27.png"><h5 id="offer">Best Deal!</h5></div></section>
+		<section class="div7sec4"><div><img src="img/item28.png"><h5 id="offer">Price Slashed!</h5></div></section>
+	</div>
+	<div class="div8">
+		<section class="div8sec1"><div><img src="img/item29.png"><h5 id="offer">Deal Of The Day<h5><div></section>
+		<section class="div8sec2"><div><img src="img/item30.png"><h5 id="offer">Starting From Rs 2999</h5></div></section>
+		<section class="div8sec3"><div><img src="img/item31.png"><h5 id="offer">Buy Now!</h5></div></section>
+		<section class="div8sec4"><div><img src="img/item32.png"><h5 id="offer">Price Drop!</h5></div></section>
+	</div>
+	<div class="div9">
+		<section class="div9sec1"><div><img src="img/item33.png"><h5 id="offer">Grab Now!</h5></div></section>
+		<section class="div9sec2"><div><img src="img/item34.png"><h5 id="offer">Up To 30% off</h5></div></section>
+		<section class="div9sec3"><div><img src="img/item35.png"><h5 id="offer">Up To 60% off</h5></div></section>
+		<section class="div9sec4"><div><img src="img/item36.png"><h5 id="offer">Hurry! Buy Now</h5></div></section>
+	</div>
+	<div class="div10">
+		<section class="div10sec1"><div><img src="img/item37.png"><h5 id="offer">Maha Price Drop!</h5></div></section>
+		<section class="div10sec2"><div><img src="img/item38.png"><h5 id="offer">Grab Now!</h5></div></section>
+		<section class="div10sec3"><div><img src="img/item39.png"><h5 id="offer">Top Rated!</h5></div></section>
+		<section class="div10sec4"><div><img src="img/item40.png"><h5 id="offer"> Big Price Drop!</h5></div></section>
+	</div>
+</header>
+</div>
+<a href="#top"><button class="top">Back to Top</button></a>
+    <footer>
+        <div class="footer">
+            <section class="footerone">
+                <h3>GET TO KNOW US</h3>
+                <div class="one">
+                    <div>ABOUT US</div>
+                    <div>CAREERS</div>
+                    <div>PRESS RELEASES</div>
+                    <div>BOMIRANG CARES</div>
+                    <div>GIFT A SMILE</div>
+                    <div>HELP</div>
+                    <div>POLICIES</div>
+                </div>
+            </section>
+            <section class="footertwo">
+                <h3>EARN WITH US</h3>
+                <div class="two">
+                    <div class="items">
+                        <div>SELL ON BOMIRANG</div>
+                        <div>SELL UNDER BOMIRANG ACCELERATOR</div>
+                        <div>BECOME AN AFFILIATE</div>
+                        <div>FULLFILLMENT BY BOMIRANG</div>
+                        <div>ADVERTISE YOUR PRODUCTS</div>
+                        <div>BOMIRANG PAY BY MERCHANT</div>
+                    </div>
+                </div>
+            </section>
+            <section class="footerthree">
+                <h3>LET US HELP YOU</h3>
+                <div class="three">
+                    <div>Your Account</div>
+                    <div>Return centre</div>
+                    <div>100% Purchase protection</div>
+                    <div>Terms and Condition</div>
+                    <div>Bomirang App download</div>
+                    <div>Help Centre</div>
+                    <div>FAQ</div>
+                </div>
+            </section>
+            <section class="footerfour">
+                <h3 id="aboutus">CONNECT WITH US</h3>
+                <div class="logos">
+                    <div class="logos2">
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <p class="subs">GIVE FEEDBACK</p>
+                <input type="text" id="email" placeholder="YOUR FEEDBACK">
+                <button class="btnfoot">Submit</button>
+            </section>
+        </div>
+    </footer>
+    <script src="js/java.js"></script>
+</body>
+</html>

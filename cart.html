@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Css/cart.css">
+    <title>Bomirang Cart</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <pre>
+          <a href="#">ALL</a>
+          <a href="electronic.html" target="_blank">ELECTRONICS</a>
+          <a href="mens.html" target="_blank">MENS</a>
+          <a href="women.html" target="_blank">WOMEN</a>
+          <a href="kids.html" target="_blank">KIDS</a>
+          <a href="furniture.html" target="_blank">FURNITURE</a>
+          <a href="shoes.html" target="_blank">SHOES</a>
+          <a href="#aboutus">ABOUT US</a>
+          <a href="#aboutus">HELP</a>
+          <a href="login.html" target="_blank">LOGIN</a>
+          <a href="#contactus">CONTACT US</a>
+          </pre>
+        </div>
+        <span class="hamburger" onclick="openNav()">&#9776;</span>
+        
+        <div class="logo"><img src="img/logo(3).jpg" alt=""></div>
+        <div><select id="all">
+            <option>ALL</option>
+            <option>Mens</option>
+            <option>Womens</option>
+            <option>Kids</option>
+            <option>Electronics</option>
+            <option>Shoes</option>
+            <option>Essentials</option>
+            <option>Mobiles</option>
+        </select>
+        <input type="text" id="search" placeholder="      Search for Products, Brands and more..">
+        <button id="searchicon" onclick="searchcat()" ><i class="fa fa-search fa-2x"></i></button>
+        </div>
+        <button class="login" ><a href="login.html" target="_blank">Login</a></button>
+        <button class="orders" >Orders</button>
+        <button class="contactus" ><a href="tel:6388392311">Contact Us</a></button>
+        <a href="cart.html" target="_blank" id="shoppingcart"><i class="fa fa-shopping-cart fa-3x"></i></a>
+      </nav>
+    </header>
+    <div class="mcontent">
+      <div class="clm">
+        <h2>CART ITEMS</h2>
+        <section class="cartone">
+          <div class="leftsec" id="add"><img src="img/item1.png" width="280" height="300"></div>
+          <div class="rightsec">
+            <div class="prdetail">
+              <h3> Prestige coffee maker</h3>
+              <p class="color">Color: black</p>
+              <p class="color">Discount: 50%</p>
+              <p class="color">Bomirang verified</p>
+              <p class="delete"><i class="fa fa-trash"> Remove item</i></p>
+              <p class="delete"><i class="fa fa-heart" style="color: red;"></i>Add to wishlist</p>
+            </div>
+            <div class="prquantity">
+              <ul class="unordered">
+                <li class="lione"><button class="libtnone" onclick="decreaseNumone()">-</button></li>
+                <li class="litwo"><input type="text" id="textbox" value="0"></li>
+                <li class="lithree"><button class="libtnone" onclick="increaseNumone()">+</button></li>
+              </ul>
+              <div class="money">
+                <h3>Rs: <span id="price">0.00</span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cartone">
+          <div class="leftsec"><img src="img/mitem1.png" width="280" height="300"></div>
+          <div class="rightsec">
+            <div class="prdetail">
+              <h3> Helmont</h3>
+              <p class="color">Color: black & Red</p>
+              <p class="color">Discount: 30%</p>
+              <p class="color">Bomirang verified</p>
+              <p class="delete"><i class="fa fa-trash"> Remove item</i></p>
+              <p class="delete"><i class="fa fa-heart" style="color: red;"></i>Add to wishlist</p>
+            </div>
+            <div class="prquantity">
+              <ul class="unordered">
+                <li class="lione"><button class="libtnone" onclick="decreaseNumtwo()">-</button></li>
+                <li class="litwo"><input type="text" id="textboxtwo" value="0"></li>
+                <li class="lithree"><button class="libtnone" onclick="increaseNumtwo()">+</button></li>
+              </ul>
+              <div class="money">
+                <h3>Rs: <span id="pricetwo">0.00</span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cartone">
+          <div class="leftsec"><img src="img/fitem1.png" width="280" height="300"></div>
+          <div class="rightsec">
+            <div class="prdetail">
+              <h3>Swings</h3>
+              <p class="color">Color: Brown & Orange</p>
+              <p class="color">Discount: 10%</p>
+              <p class="color">Bomirang verified</p>
+              <p class="delete"><i class="fa fa-trash"> Remove item</i></p>
+              <p class="delete"><i class="fa fa-heart" style="color: red;"></i>Add to wishlist</p>
+            </div>
+            <div class="prquantity">
+              <ul class="unordered">
+                <li class="lione"><button class="libtnone" onclick="decreaseNumthree()">-</button></li>
+                <li class="litwo"><input type="text" id="textboxthree" value="0"></li>
+                <li class="lithree"><button class="libtnone" onclick="increaseNumthree()">+</button></li>
+              </ul>
+              <div class="money">
+                <h3>Rs: <span id="pricethree">0.00</span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cartone">
+          <div class="leftsec"><img src="img/witem1.png" width="280" height="300"></div>
+          <div class="rightsec">
+            <div class="prdetail">
+              <h3>Rola Trendz</h3>
+              <p class="color">Color: Yellow & black</p>
+              <p class="color">Discount: 50%</p>
+              <p class="color">Bomirang verified</p>
+              <p class="delete"><i class="fa fa-trash"> Remove item</i></p>
+              <p class="delete"><i class="fa fa-heart"style="color: red;"></i>Add to wishlist</p>
+            </div>
+            <div class="prquantity">
+              <ul class="unordered">
+                <li class="lione"><button class="libtnone" onclick="decreaseNumfour()">-</button></li>
+                <li class="litwo"><input type="text" id="textboxfour" value="0"></li>
+                <li class="lithree"><button class="libtnone" onclick="increaseNumfour()">+</button></li>
+              </ul>
+              <div class="money">
+                <h3>Rs: <span id="pricefour">0.00</span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cartone">
+          <div class="leftsec"><img src="img/kitem1.png" width="280" height="300"></div>
+          <div class="rightsec">
+            <div class="prdetail">
+              <h3> Tripper</h3>
+              <p class="color">Color: black</p>
+              <p class="color">Discount: 30%</p>
+              <p class="color">Bomirang verified</p>
+              <p class="delete"><i class="fa fa-trash"> Remove item</i></p>
+              <p class="delete"><i class="fa fa-heart" style="color: red;"></i>Add to wishlist</p>
+            </div>
+            <div class="prquantity">
+              <ul class="unordered">
+                <li class="lione"><button class="libtnone" onclick="decreaseNumfive()">-</button></li>
+                <li class="litwo"><input type="text" id="textboxfive" value="0"></li>
+                <li class="lithree"><button class="libtnone" onclick="increaseNumfive()">+</button></li>
+              </ul>
+              <div class="money">
+                <h3>Rs: <span id="pricefive">0.00</span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cartone">
+          <div class="leftsec"><img src="img/sitem1.png" width="280" height="300"></div>
+          <div class="rightsec">
+            <div class="prdetail">
+              <h3> Port Shoes</h3>
+              <p class="color">Color: black</p>
+              <p class="color">Discount: 60%</p>
+              <p class="color">Bomirang verified</p>
+              <p class="delete"><i class="fa fa-trash"> Remove item</i></p>
+              <p class="delete"><i class="fa fa-heart" style="color: red;"></i>Add to wishlist</p>
+            </div>
+            <div class="prquantity">
+              <ul class="unordered">
+                <li class="lione"><button class="libtnone" onclick="decreaseNumsix()">-</button></li>
+                <li class="litwo"><input type="text" id="textboxsix" value="0"></li>
+                <li class="lithree"><button class="libtnone" onclick="increaseNumsix()">+</button></li>
+              </ul>
+              <div class="money">
+                <h3>Rs: <span id="pricesix">0.00</span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="clmtwo">
+        <div class="clmtwoo">
+          <h2>Total Amount Payable of</h2>
+          <div class="indiviamt">
+            <p>Product amount</p>
+            <p>Rs: <span id="product_amount">0.00</span></p>
+          </div>
+          <div class="indiviamttwo">
+            <p>Shipping Charge</p>
+            <p>Rs: <span id="shipping_charge"> 50.00</span></p>
+          </div>
+          <hr/>
+          <div class="totalamt">
+            <p>The total amount of(inclusive of GST)</p>
+            <p>Rs: <span id="totalamt">0.00</span></p>
+          </div>
+          <button class="buybtn">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <a href="#top"><button class="top">Back to Top</button></a>
+    <footer>
+        <div class="footer">
+            <section class="footerone">
+                <h5 id="aboutus">GET TO KNOW US</h5>
+                <div class="one">
+                    <div>ABOUT US</div>
+                    <div>CAREERS</div>
+                    <div>PRESS RELEASES</div>
+                    <div>BOMIRANG CARES</div>
+                    <div>GIFT A SMILE</div>
+                    <div>HELP</div>
+                    <div>POLICIES</div>
+                </div>
+            </section>
+            <section class="footertwo">
+                <h5 id="aboutus">EARN WITH US</h5>
+                <div class="two">
+                    <div class="items">
+                        <div>SELL ON BOMIRANG</div>
+                        <div>SELL UNDER BOMIRANG ACCELERATOR</div>
+                        <div>BECOME AN AFFILIATE</div>
+                        <div>FULLFILLMENT BY BOMIRANG</div>
+                        <div>ADVERTISE YOUR PRODUCTS</div>
+                        <div>BOMIRANG PAY BY MERCHANT</div>
+                    </div>
+                </div>
+            </section>
+            <section class="footerthree">
+                <h5 id="aboutus">LET US HELP YOU</h5>
+                <div class="three">
+                    <div>Your Account</div>
+                    <div>Return centre</div>
+                    <div>100% Purchase protection</div>
+                    <div>Terms and Condition</div>
+                    <div>Bomirang App download</div>
+                    <div>Help Centre</div>
+                    <div>FAQ</div>
+                </div>
+            </section>
+            <section class="footerfour">
+                <h5 id="contactus" id="aboutus">CONNECT WITH US</h5>
+                <div class="logos">
+                    <div class="logos2">
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <p class="subs">GIVE FEEDBACK</p>
+                <input type="text" id="email" placeholder="YOUR FEEDBACK">
+                <button class="btnfoot">Submit</button>
+            </section>
+        </div>
+    </footer>
+    <script src="js/java.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

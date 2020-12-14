@@ -1,0 +1,1109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+nav{
+    height:8vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    padding: 3px 5px;
+    display: flex;
+    /* justify-content:space-between; */
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  
+}
+
+.sidenav a {
+  padding: 5px 8px 5px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  line-height:0px;
+}
+
+.sidenav a:hover {
+  color: #19C2D7;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+.hamburger{
+  width:35px;
+  padding: 2px 3px;
+color:white;
+background-color:black;
+font-size:30px;
+cursor:pointer;
+border:1px solid grey;
+margin:3px 0 1px 10px;
+}
+.hamburger:hover{
+border: 1.5px solid white;}
+
+.logo img{
+    height: 6vh;
+    width: 110px;
+    margin:5px 10px 0 25px;
+}
+option{
+    font-size: 170%;
+}
+#search{
+    height: 6vh;
+    width: 700px;
+   padding:3px 5px;
+   font-size: 110%;
+   border:1px solid white;
+   border-radius: 5px;
+   padding-left: 55px;
+}
+#all{
+    position: relative;
+    left: 55px;
+    bottom: 1px;
+    height: 6vh;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, 0.2);
+    border: none;
+    border-right:1px solid grey;
+    font-size: 80%;
+    padding: 1px 1px;
+}
+#all:hover{
+    background-color: white;
+}
+#searchicon{
+    position: relative;
+    right: 54px;
+    top:3px;
+    height: 6vh;
+    width: 50px;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    border-left:1px solid grey;
+}
+#searchicon:hover{
+    background-color: rgb(201, 153, 34);
+}
+
+.login,.contactus,.orders{
+  margin-top: 3px;
+  height: 6vh;
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-size: 105%;
+  border: 1px solid grey;
+}
+.login a, .contactus a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.login:hover,.contactus:hover,.orders:hover,#shoppingcart:hover{
+   border: 1px solid white;
+}
+
+.orders{
+   margin-left: 30px;
+}
+
+.contactus{
+   margin-left: 30px;
+   margin-right: 70px;
+}
+
+#shoppingcart{
+   height: 6vh;
+   margin-top: 2px;
+   background-color: black;
+   color:white;  
+   border: 1px solid gray;
+   padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+main {
+    width:100%;
+    height: 520vh;
+    background-color: #ECF0F1 ;
+
+}
+
+/*******************************************************  for div 1  *******************************************/
+
+main .div1{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+
+}
+
+main .div1sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+
+
+main .div1sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div1sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div1sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/******************************************* for hover of div 1 *********************************************************************/
+
+.div1sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div1sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div1sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div1sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/*********************************************  for div 2 ************************************************************************/
+
+main .div2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div2sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div2sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div2sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div2sec4{
+    height:320px;
+    width:20%;
+    background-color:white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/******************************************** hover for div 2 ************************************************************/
+
+.div2sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div2sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div2sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div2sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
+
+/************************************************** for div 3 *****************************************************/
+
+main .div3{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div3sec1{
+    height:320px;
+    width:20%;
+    background-color:white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div3sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div3sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div3sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/****************************************************** hover div 3 ******************************************/
+
+.div3sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div3sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div3sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div3sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/*************************************************** for div 4 *************************************************/
+
+main .div4{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div4sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div4sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div4sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div4sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/****************************************************** hover for div 4 **************************************/
+
+.div4sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div4sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div4sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div4sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/******************************************************** for div 5 ***************************************************/
+
+main .div5{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div5sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div5sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div5sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div5sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/********************************************************** hover for div 5 **********************************/
+
+.div5sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div5sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div5sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div5sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/**************************************************** for div 6 ***********************************************/
+
+main .div6{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+
+
+main .div6sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div6sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div6sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div6sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/*************************************************** hover for div 6 **************************************/
+
+.div6sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div6sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div6sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div6sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/******************************************************** for div 7 *******************************************/
+
+main .div7{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div7sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div7sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div7sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div7sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/********************************************************** hover for div 7 ********************************/
+
+.div7sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div7sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div7sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div7sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/********************************************************* for div 8 ******************************************/
+
+main .div8{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div8sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div8sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div8sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div8sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/************************************************************* hover for div 8 ************************************/
+
+.div8sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div8sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div8sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div8sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/****************************************************** for div 9 *************************************************/
+
+main .div9{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div9sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div9sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div9sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div9sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/*******************************************************  hover for div 9 ********************************************/
+
+.div9sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div9sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div9sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div9sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+
+
+/**********************************************************  for div 10  ****************************************/
+
+main .div10{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: center;
+    position: relative;
+    top: 50px;
+    margin-top: 50px;
+
+}
+
+main .div10sec1{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 70px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+    
+}
+
+main .div10sec2{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div10sec3{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+main .div10sec4{
+    height:320px;
+    width:20%;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 70px;
+    box-shadow: 3px 3px 5px 3px grey;
+    
+}
+
+/*******************************************************  hover for div 10  **************************************/
+
+.div10sec1:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div10sec2:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div10sec3:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.div10sec4:hover{
+    transform:scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/***************************************************   for image in section  *******************************************/
+
+img{height: 230px;
+    width: 220px;
+    margin-left: 35px;
+    margin-top: 30px;
+
+}
+
+/*************************************************   for offer details under the image *********************************/
+
+#offer{
+    text-align: center;color: green;
+}
+
+/************************************************    color of the text before price ************************************/
+
+#colortext{
+    text-align: center;
+    color: grey;
+}		
+
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: #151A15 ;
+    color: white;
+}
+
+
+
+/***********************************footer********************************************/
+
+footer{
+	width: 100%;
+	height: 70vh;
+	background-color: black;
+}
+footer .footer{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-content: center;
+
+}
+
+
+/***********footer 1****************/
+
+
+
+footer .footerone{
+	height: 320px;
+	width: 280px;
+	margin-left: 150px;
+	position: relative;
+	top: 50px;
+	/*background-color: violet;*/
+}
+footer .footerone h3{
+	margin: 15px;
+	color:white;
+}
+footer .footerone .one{
+	font-size: 20px;
+	color: #AEB6BF;
+	margin-top: 10px;
+	word-spacing: 1px;
+}
+footer .footerone .one div{
+	margin: 15px;
+}
+footer .footerone .one div:hover{
+	color: white;
+}
+
+/*************footer two ******************/
+
+
+footer .footertwo{
+	height: 320px;
+	width: 330px;
+	margin-left: 80px;
+	position: relative;
+	top: 50px;
+	/*background-color: yellow;*/
+}
+footer .footertwo h3{
+	margin: 15px;
+	color:white;
+}
+footer .footertwo .two{
+	font-size: 20px;
+	color: #AEB6BF ;
+	margin-top: 10px;
+	word-spacing: 1px;
+}
+footer .footertwo .items{
+	font-size: 20px;
+    line-height: 32px;
+}
+footer .items div:hover{
+	color: white;
+}
+
+
+/****************footer three *****************/
+
+
+
+footer .footerthree{
+	height: 320px;
+	width: 300px;
+	margin-left: 100px;
+	position: relative;
+	top: 50px;
+	/*background-color: yellowgreen;*/
+}
+footer .footerthree h3{
+	margin: 15px;
+	color:white;
+}
+footer .footerthree .three{
+	font-size: 20px;
+	color: #AEB6BF ;
+	margin-top: 10px;
+	word-spacing: 1px;
+}
+footer .footerthree .three div{
+	margin: 10px;
+}
+footer .footerthree .three div:hover{
+	color: white;
+}
+/*****************footer four******************/
+
+
+
+footer .footerfour{
+	height: 320px;
+	width: 320px;
+	/*background-color: green;*/
+	margin-left: 100px;
+	margin-right: 180px;
+	position: relative;
+	top: 50px;
+}
+footer .footerfour h3{
+	margin: 15px;
+	color:white;
+}
+footer .footerfour .logos2{
+	margin: 10px;
+}
+footer .footerfour .logos2 a{
+	color:#AEB6BF;
+	margin: 5px; 
+}
+footer .footerfour .logos2 .fa:hover{
+	color: white;
+}
+footer .footerfour  .subs{
+	font-size: 20px;
+	line-height: 20px;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+footer .footerfour #email{
+	height: 40px;
+	width: 90%;
+	font-size: 20px;
+}
+footer .footerfour .btnfoot{
+	width: 80px;
+	height: 30px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+footer .footerfour .btnfoot:hover{
+	background-color:#AEB6BF;
+}

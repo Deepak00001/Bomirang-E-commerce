@@ -1,0 +1,887 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+header{
+    height: 58vh;
+    width: 100%;
+} 
+/*****************************************nav****************************************/
+/*nav{
+    background-color:black;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    margin-top: 20px;
+}
+.input{
+    height: 45px;
+    width: 580px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.category{
+    position: relative;
+    right: 120px;
+}
+.category select{
+    height: 35px;
+    width: 120px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.fa-search{
+    position: relative;
+    right: 74px;
+    color: white;
+    
+}
+.button{
+    height: 35px;
+    width: 120px;
+    color: white ;
+    font-size: 18px;
+    background-color: #D35400;
+    border-radius: 8px;
+    position: relative;
+    left: 70px;
+}
+.help{
+    height: 35px;
+    width: 120px;
+    color: white;
+    font-size: 18px;
+    background-color: #D35400 ;
+    border-radius: 8px;
+}
+.fa{
+    color:white;
+} 
+*/
+nav{
+    height:8vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    padding: 3px 5px;
+    display: flex;
+    /* justify-content:space-between; */
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  
+}
+
+.sidenav a {
+  padding: 5px 8px 5px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  line-height:0px;
+}
+
+.sidenav a:hover {
+  color: #19C2D7;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+.hamburger{
+  width:35px;
+  padding: 2px 3px;
+color:white;
+background-color:black;
+font-size:30px;
+cursor:pointer;
+border:1px solid grey;
+margin:3px 0 1px 10px;
+}
+.hamburger:hover{
+border: 1.5px solid white;}
+
+.logo img{
+    height: 6vh;
+    width: 110px;
+    margin:5px 10px 0 25px;
+}
+option{
+    font-size: 170%;
+}
+#search{
+    height: 6vh;
+    width: 700px;
+   padding:3px 5px;
+   font-size: 110%;
+   border:1px solid white;
+   border-radius: 5px;
+   padding-left: 55px;
+}
+#all{
+    position: relative;
+    left: 55px;
+    bottom: 1px;
+    height: 6vh;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, 0.2);
+    border: none;
+    border-right:1px solid grey;
+    font-size: 80%;
+    padding: 1px 1px;
+}
+#all:hover{
+    background-color: white;
+}
+#searchicon{
+    position: relative;
+    right: 54px;
+    top:3px;
+    height: 6vh;
+    width: 50px;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    border-left:1px solid grey;
+}
+#searchicon:hover{
+    background-color: rgb(201, 153, 34);
+}
+
+.login,.contactus,.orders{
+  margin-top: 3px;
+  height: 6vh;
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-size: 105%;
+  border: 1px solid grey;
+}
+.login a, .contactus a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.login:hover,.contactus:hover,.orders:hover,#shoppingcart:hover{
+   border: 1px solid white;
+}
+
+.orders{
+   margin-left: 30px;
+}
+
+.contactus{
+   margin-left: 30px;
+   margin-right: 70px;
+}
+
+#shoppingcart{
+   height: 6vh;
+   margin-top: 2px;
+   background-color: black;
+   color:white;  
+   border: 1px solid gray;
+   padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*****************************************main*************************************/
+
+main{
+    height: 50vh;
+    width: 100%;
+    background-color:#CACFD2;
+
+}
+/*#slider{
+    height: 40vh;
+    width: 100%;
+    background-image: url(../img/first.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 15s infinite linear;
+
+}
+@keyframes slider{
+    0%{
+        background-image: url(../img/first.png);
+    }
+    20%{
+        background-image: url(../img/second.png);
+    }
+    40%{
+        background-image: url(../img/third.png);
+    }
+    60%{
+        background-image: url(../img/fourth.png);
+    }
+    80%{
+        background-image: url(../img/fifth.png);
+    }
+}*/
+.slider{
+    overflow: hidden;
+    height: 50vh;
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+.slider figure img{
+    float: left;
+    width: 100%;
+}
+.slider figure{
+    width: 500%;
+    margin: 0;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    animation: slider 15s infinite;
+    background-color:#CACFD2;
+}
+@keyframes slider{
+    0%{
+        left:0%;
+    }
+    10%{
+        left:0%;
+    }
+    12%{
+        left:-100%;
+    }
+    22%{
+        left:-100%;
+    }
+    24%{
+        left:-200%;
+    }
+    34%{
+        left:-200%;
+    }
+    36%{
+        left:-300%;
+    }
+    46%{
+        left:-300%;
+    }
+
+    48%{
+        left:-400%;
+    }
+    58%{
+        left:-400%;
+    }
+    60%{
+        left:-300%;
+    }
+    70%{
+        left:-300%;
+    }
+    72%{
+        left:-200%;
+    }
+    82%{
+        left:-200%;
+    }
+    84%{
+        left:-100%;
+    }
+    94%{
+        left:0%;
+    }
+    96%{
+        left:0%;
+    }
+}
+/*********************************main content*****************************************/
+#content{
+    width: 100%;
+    background-color:#CACFD2;
+}
+
+/***********************************first section***********************************/
+
+#content .firstcat{
+    position: relative;
+    top: 5vh;
+    left: 40px;
+    height: 55vh;
+    width: 95%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+#content .firstcat .secone{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 0;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .firstcat .secone h2, .secthree h2{
+    margin: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content .firstcat .secone .fourdiv, .secthree .fourdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#content .firstcat .fourdiv .divone, .divtwo, .divthree, .divfour{
+    height:140px; 
+    width: 140px;
+    margin: 10px;
+
+    /*background-color: yellow;*/
+}
+#content .firstcat a{
+    margin: 18px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #19C2D7 ;
+}
+
+
+#content .firstcat .sectwo{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .firstcat .sectwo h2, .secfour h2{
+    margin: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content .firstcat .sectwo img, .secfour img{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#content .firstcat .secthree{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .firstcat .secfour{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+
+/******************************second section*****************************************/
+
+
+#content .secondcat{
+    margin-top: 10vh;
+    margin-left: 40px;
+    height: 50vh;
+    width: 95%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .secondcat #secondcat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 170%;
+    
+}
+#content .secondcat .aslide, .bslide, .cslide, .dslide, .eslide, .fslide, .gslide, .hslide {
+    height: 38vh;
+    width: 40vh;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*background-color: violet;*/
+}
+#content .secondcat .aslide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+#content .aslide #head{
+    text-align: center;
+}
+
+
+/*****************************third section****************************************/
+
+#content .thirdcat{
+    margin-top: 5vh;
+    margin-left: 40px;
+    height: 55vh;
+    width: 95%;
+    background-color:#CACFD2;;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+#content .thirdcat .secone{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 0;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .thirdcat .secone h2, .secthree h2{
+    margin: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content .thirdcat .secone img, .secthree img{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+/************************************2************************************/
+
+#content .thirdcat .sectwo{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 0;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .thirdcat .sectwo h2, .secthree h2{
+    margin: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content .thirdcat .sectwo .fourdiv, .secthree .fourdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#content .thirdcat .fourdiv .divone, .divtwo, .divthree, .divfour{
+    height:140px; 
+    width: 140px;
+    margin-right: 10px;
+    /*background-color: yellow;*/
+}
+#content .thirdcat a{
+    margin: 18px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #19C2D7 ;
+}
+
+/*****************************************3***********************************/
+
+#content .thirdcat .secthree{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+
+/*********************************************4**************************************/
+
+#content .thirdcat .secfour{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    box-shadow: 20px;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+
+
+/***************************fourth section******************************************/
+
+#content .fourthcat{
+    margin-top: 5vh;
+    margin-left: 40px;
+    height: 50vh;
+    width: 95%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+
+#content .fourthcat #fourthcat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 170%;
+    
+}
+#content .fourthcat .aslide, .bslide, .cslide, .dslide, .eslide, .fslide, .gslide, .hslide {
+    height: 38vh;
+    width: 40vh;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: violet;
+    
+}
+#content .fourthcat .aslide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+#content .aslide #head{
+    text-align: center;
+}
+/**********************************fifth section **************************************/
+#content .fifthcat{
+    position: relative;
+    top: 5vh;
+    left: 40px;
+    height: 55vh;
+    width: 95%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+#content .fifthcat .secone{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 0;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .fifthcat .secone h2, .secthree h2{
+    margin: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content .fifthcat .secone .fourdiv, .secthree .fourdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#content .fifthcat .fourdiv .divone, .divtwo, .divthree, .divfour{
+    height:140px; 
+    width: 140px;
+    margin: 10px;
+    /*background-color: yellow;*/
+}
+#content .fifthcat a{
+    margin: 18px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #19C2D7 ;
+}
+
+
+#content .fifthcat .sectwo{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .fifthcat .sectwo h2, .secfour h2{
+    margin: 18px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content .fifthcat .sectwo img, .secfour img{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+#content .fifthcat .secthree{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .fifthcat .secfour{
+    background-color: white;
+    width: 22.5%;
+    height: 100%;
+    box-shadow: 20px;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+/*#content .fifthcat{
+    margin-top: 5vh;
+    margin-left: 40px;
+    margin-bottom: 9vh;
+    height: 50vh;
+    width: 95%;
+    background-color: #CACFD2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+#content .fifthcat .secone{
+    background-color: yellowgreen;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    margin-left: 0;
+    box-shadow: 3px 3px 5px 5px grey;;
+}
+#content .fifthcat .sectwo{
+    background-color: yellowgreen;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .fifthcat .secthree{
+    background-color: yellowgreen;
+    width: 22.5%;
+    height: 100%;
+    margin-right: 5%;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .fifthcat .secfour{
+    background-color: yellowgreen;
+    width: 22.5%;
+    height: 100%;
+    box-shadow: 3px 3px 5px 5px grey;
+}*/
+/*******************************sixth section ************************************/
+
+#content .sixthcat{
+    margin-top: 15vh;
+    margin-left: 40px;
+    height: 50vh;
+    width: 95%;
+    position: relative;
+    bottom: 40px;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 3px 3px 5px 5px grey;
+}
+#content .sixthcat #sixthcat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 170%;
+    
+}
+#content .sixthcat .aslide, .bslide, .cslide, .dslide, .eslide, .fslide, .gslide, .hslide {
+    height: 38vh;
+    width: 40vh;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: violet;
+    
+}
+#content .sixthcat .aslide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+#content .aslide #head{
+    text-align: center;
+}
+
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: #151A15 ;
+    color: white;
+}
+
+
+
+/***********************************footer********************************************/
+
+footer{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+}
+footer .footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+
+/***********footer 1****************/
+
+
+
+footer .footerone{
+    height: 320px;
+    width: 280px;
+    margin-left: 150px;
+    position: relative;
+    top:50px;
+    /*background-color: violet;*/
+}
+footer .footerone h3{
+    margin: 15px;
+    color:white;
+}
+footer .footerone .one{
+    font-size: 20px;
+    color: #AEB6BF;
+    margin-top: 10px;
+    word-spacing: 1px;
+}
+footer .footerone .one div{
+    margin: 15px;
+}
+footer .footerone .one div:hover{
+    color: white;
+}
+
+/*************footer two ******************/
+
+
+footer .footertwo{
+    height: 320px;
+    width: 330px;
+    margin-left: 70px;
+    position: relative;
+    top: 50px;
+    /*background-color: yellow;*/
+}
+footer .footertwo h3{
+    margin: 15px;
+    color:white;
+}
+footer .footertwo .two{
+    font-size: 20px;
+    color: #AEB6BF ;
+    margin-top: 10px;
+    word-spacing: 1px;
+}
+footer .footertwo .items{
+    font-size: 20px;
+    line-height: 32px;
+}
+footer .items div:hover{
+    color: white;
+}
+
+
+/****************footer three *****************/
+
+
+
+footer .footerthree{
+    height: 320px;
+    width: 300px;
+    margin-left: 100px;
+    position: relative;
+    top: 50px;
+    /*background-color: yellowgreen;*/
+}
+footer .footerthree h3{
+    margin: 15px;
+    color:white;
+}
+footer .footerthree .three{
+    font-size: 20px;
+    color: #AEB6BF ;
+    margin-top: 10px;
+    word-spacing: 1px;
+}
+footer .footerthree .three div{
+    margin: 10px;
+}
+footer .footerthree .three div:hover{
+    color: white;
+}
+/*****************footer four******************/
+
+
+
+footer .footerfour{
+    height: 320px;
+    width: 320px;
+    /*background-color: green;*/
+    margin-left: 100px;
+    margin-right: 180px;
+    position: relative;
+    top: 50px;
+}
+footer .footerfour h3{
+    margin: 15px;
+    color:white;
+}
+footer .footerfour .logos2{
+    margin: 10px;
+}
+footer .footerfour .logos2 a{
+    color:#AEB6BF;
+    margin: 5px; 
+}
+footer .footerfour .logos2 .fa:hover{
+    color: white;
+}
+footer .footerfour  .subs{
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+footer .footerfour #email{
+    height: 40px;
+    width: 90%;
+    font-size: 20px;
+}
+footer .footerfour .btnfoot{
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+footer .footerfour .btnfoot:hover{
+    background-color:#AEB6BF;
+}

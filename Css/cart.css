@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+/***************************nav**************************************/
+nav{
+    height:8vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    padding: 3px 5px;
+    display: flex;
+    /* justify-content:space-between; */
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  
+}
+
+.sidenav a {
+  padding: 5px 8px 5px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  line-height:0px;
+}
+
+.sidenav a:hover {
+  color: #19C2D7;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  
+}
+.hamburger{
+  width:35px;
+  padding: 2px 3px;
+color:white;
+background-color:black;
+font-size:30px;
+cursor:pointer;
+border:1px solid grey;
+margin:3px 0 1px 10px;
+}
+.hamburger:hover{
+border: 1.5px solid white;}
+
+.logo img{
+    height: 6vh;
+    width: 110px;
+    margin:5px 10px 0 25px;
+}
+option{
+    font-size: 170%;
+}
+#search{
+    height: 6vh;
+    width: 700px;
+   padding:3px 5px;
+   font-size: 110%;
+   border:1px solid white;
+   border-radius: 5px;
+   padding-left: 55px;
+}
+#all{
+    position: relative;
+    left: 55px;
+    bottom: 1px;
+    height: 6vh;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgba(125, 125, 125, 0.2);
+    border: none;
+    border-right:1px solid grey;
+    font-size: 80%;
+    padding: 1px 1px;
+}
+#all:hover{
+    background-color: white;
+}
+#searchicon{
+    position: relative;
+    right: 54px;
+    top:3px;
+    height: 6vh;
+    width: 50px;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    border-left:1px solid grey;
+}
+#searchicon:hover{
+    background-color: rgb(201, 153, 34);
+}
+
+.login,.contactus,.orders{
+  margin-top: 3px;
+  height: 6vh;
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-size: 105%;
+  border: 1px solid grey;
+}
+.login a, .contactus a{
+    text-decoration: none;
+    color: white;
+}
+ 
+.login:hover,.contactus:hover,.orders:hover,#shoppingcart:hover{
+   border: 1px solid white;
+}
+
+.orders{
+   margin-left: 30px;
+}
+
+.contactus{
+   margin-left: 30px;
+   margin-right: 70px;
+}
+
+#shoppingcart{
+   height: 6vh;
+   margin-top: 2px;
+   background-color: black;
+   color:white;  
+   border: 1px solid gray;
+   padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/********************************************main content*********************************************/
+.mcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #CACFD2;
+}
+.mcontent .clmtwo{
+    width: 500px;
+    height: 45vh;
+    margin-bottom: 1120px;
+    margin-left: 30px;
+    background-color: white;
+    background-attachment: fixed;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+.mcontent .clm h2{
+    text-align: center;
+    margin: 10px;
+}
+.mcontent .clm{
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /*box-shadow: 20px black;*/
+    height: 200vh;
+    overflow: auto;
+    background-color: white;
+    border: black;
+} 
+.mcontent .clm .cartone{
+    width: 678px;
+    height: 361px;
+    margin-bottom: 30px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.mcontent .clm .cartone .leftsec{
+    height: 300px;
+    width: 280px;
+    margin-left: 20px;
+    box-shadow: 3px;
+    background-color: royalblue;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+.mcontent .clm .cartone .rightsec{
+    height: 300px;
+    width: 330px;
+    margin-right: 20px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mcontent .clm .cartone .rightsec .prdetail{
+    height: 300px;
+    width: 160px;
+    background-color: #aaeeee ;
+}
+.mcontent .clm .cartone .rightsec .prdetail h3 , p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.mcontent .clm .cartone .rightsec .prquantity{
+    height: 300px;
+    width: 170px;
+    background-color:#E8F8F5 ;
+}
+.mcontent .clm .cartone .rightsec .prquantity ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 40px;
+    margin-left: 30px;
+    list-style: none;
+}
+.mcontent .clm .cartone .rightsec .prquantity #textbox, #textboxtwo, #textboxthree, #textboxfour, #textboxfive, #textboxsix{
+    width: 50px;
+    height: 30px;
+    padding-left: 18px;
+    
+}
+.mcontent .clm .cartone .rightsec .prquantity ul button{
+    width: 35px;
+    height: 30px;
+    font-size: 19px;
+    text-align: center;
+}
+.mcontent .clm .cartone .rightsec .prquantity ul button:hover{
+    background-color: orange;
+    font-size: 20px;
+}
+.mcontent .clm .cartone .rightsec .prquantity h3{
+    margin-left: 40px;
+    margin-top: 40px;
+    color: black;
+    
+}
+/************************************left div*******************************************/
+.mcontent .clmtwo h2{
+    margin: 20px;
+}
+.mcontent .clmtwo .indiviamt, .indiviamttwo, .totalamt{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.mcontent .clmtwo hr{
+    background-color: black;
+}
+.mcontent .clmtwo .buybtn{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: #151A15 ;
+    color: white;
+}
+
+
+
+/***********************************footer********************************************/
+
+footer{
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+}
+footer .footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+
+}
+
+
+/***********footer 1****************/
+
+
+
+footer .footerone{
+  height: 320px;
+  width: 300px;
+  margin-left: 150px;
+  position: relative;
+  top: 50px;
+  /*background-color: violet;*/
+}
+footer .footerone #aboutus{
+  margin: 15px;
+  color:white;
+
+}
+footer .footerone .one{
+  font-size: 20px;
+  color: #AEB6BF;
+  margin-top: 10px;
+  word-spacing: 1px;
+}
+footer .footerone .one div{
+  margin: 10px;
+}
+footer .footerone .one div:hover{
+  color: white;
+}
+
+/*************footer two ******************/
+
+
+footer .footertwo{
+  height: 320px;
+  width: 340px;
+  margin-left: 80px;
+  position: relative;
+  top: 50px;
+  /*background-color: yellow;*/
+}
+footer .footertwo h5{
+  margin: 15px;
+  color:white;
+}
+footer .footertwo .two{
+  font-size: 20px;
+  color: #AEB6BF ;
+  margin-top: 10px;
+  word-spacing: 1px;
+}
+footer .footertwo .items{
+  font-size: 20px;
+    line-height: 32px;
+}
+footer .items div:hover{
+  color: white;
+}
+
+
+/****************footer three *****************/
+
+
+
+footer .footerthree{
+  height: 320px;
+  width: 300px;
+  margin-left: 100px;
+  position: relative;
+  top: 50px;
+  /*background-color: yellowgreen;*/
+}
+footer .footerthree h5{
+  margin: 15px;
+  color:white;
+}
+footer .footerthree .three{
+  font-size: 20px;
+  color: #AEB6BF ;
+  margin-top: 10px;
+  word-spacing: 1px;
+}
+footer .footerthree .three div{
+  margin: 5px;
+}
+footer .footerthree .three div:hover{
+  color: white;
+}
+/*****************footer four******************/
+
+
+
+footer .footerfour{
+  height: 320px;
+  width: 350px;
+  /*background-color: green;*/
+  margin-left: 100px;
+  margin-right: 180px;
+  position: relative;
+  top: 50px;
+}
+footer .footerfour h5{
+  margin: 15px;
+  color:white;
+}
+footer .footerfour .logos2{
+  margin: 10px;
+}
+footer .footerfour .logos2 a{
+  color:#AEB6BF;
+  margin: 5px; 
+}
+footer .footerfour .logos2 .fa:hover{
+  color: white;
+}
+footer .footerfour  .subs{
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+    margin-top: 40px;
+    margin-right: 100px;
+  margin-bottom: 20px;
+}
+footer .footerfour #email{
+  height: 40px;
+  width: 90%;
+  font-size: 20px;
+}
+footer .footerfour .btnfoot{
+  width: 80px;
+  height: 30px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+footer .footerfour .btnfoot:hover{
+  background-color:#AEB6BF;
+}
